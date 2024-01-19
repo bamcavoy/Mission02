@@ -7,11 +7,15 @@ using System.Threading.Tasks;
 namespace Mission02
 {
     internal class DiceRoll
-    { 
+    {
+        int diceCount = 0;
         // constructor
-        public DiceRoll() 
+        public DiceRoll(int count) 
         {
+            diceCount = count;
         }
+
+        public DiceRoll() { }
 
         // roll one die
         public int Roll()
@@ -24,7 +28,7 @@ namespace Mission02
         }
 
         // roll 2 dice as many times as specified
-        public int[] RollAll(int diceCount)
+        public int[] RollAll()
         {
             // create results array
             int[] rollCounts = new int[13];

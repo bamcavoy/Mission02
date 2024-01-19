@@ -21,10 +21,10 @@ internal class Program
         System.Console.WriteLine("Total number of rolls = " + diceCount + ".\n");
 
         // instantiate DiceRoll
-        DiceRoll diceRoll = new DiceRoll();
+        DiceRoll diceRoll = new DiceRoll(diceCount);
 
         // Store RollAll array results to rollCounts
-        int[] rollCounts = diceRoll.RollAll(diceCount);
+        int[] rollCounts = diceRoll.RollAll();
 
         // Build histogram for each possible result
         for (int count = 2; count <= 12; count++) 
