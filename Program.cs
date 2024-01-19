@@ -1,5 +1,5 @@
 ﻿// Blake McAvoy Section 2
-// Mission 02 assignment Winter 2024
+// Mission 02 assignment
 
 using Mission02;
 
